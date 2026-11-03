@@ -1,6 +1,6 @@
-# MODОA — Furniture & Home Decor
+# M O O D A — Furniture & Home Decor
 
-MODОA is a modern furniture and home decor website designed to help users discover stylish furniture and accessories for their living spaces.
+M O O D A is a modern furniture and home decor website designed to help users discover stylish furniture and accessories for their living spaces.
 
 The website features a clean and elegant interface with warm neutral colors, maroon accents, and a responsive layout.
 
