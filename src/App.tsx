@@ -1,21 +1,29 @@
-import { Button } from "@/components/ui/button"
+import Navbar from "./components/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Posts from "./pages/Product";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import PostsDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
 
 export function App() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div>
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/posts" element={<Posts />} />
+
+        {/* Product Detail */}
+        <Route path="/posts/:id" element={<PostsDetail />} />
+
+        {/* Shopping Cart */}
+        <Route path="/cart" element={<Cart />} />
+      </Routes>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
